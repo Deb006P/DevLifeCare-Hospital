@@ -15,13 +15,11 @@
 <body>
 <%@include file="navbar.jsp" %>
 
-<h1>this is admin page</h1>
-
  <dev class="container p-5">
             <div class="row">
                 <div class="col-md-4">
                 <div class="card-point">
-                    <div class="card-body text-center text-success">
+                    <div class="card-body text-center text-primary">
                         <i class="fas fa-user-md fa-3x" ></i> <br>
                         <p class="fs-4 text-center">
                             Doctor <br>10
@@ -33,7 +31,7 @@
   
                 <div class="col-md-4">
                 <div class="card-point">
-                    <div class="card-body text-center text-success">
+                    <div class="card-body text-center text-primary">
                         <i class="fas fa-user-circle fa-3x" ></i> <br>
                         <p class="fs-4 text-center">
                             User <br>30
@@ -47,7 +45,7 @@
     
                 <div class="col-md-4">
                 <div class="card-point">
-                    <div class="card-body text-center text-success">
+                    <div class="card-body text-center text-primary">
                         <i class="far fa-calendar-check fa-3x" ></i> <br>
                         <p class="fs-4 text-center">
                             Total Appointment <br>150

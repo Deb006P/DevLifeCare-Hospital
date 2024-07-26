@@ -7,6 +7,10 @@ private String email;
 
 
 
+public User() {
+	super();
+	// TODO Auto-generated constructor stub
+}
 public User(String name, String email, String password) {
 	super();
 	this.name = name;

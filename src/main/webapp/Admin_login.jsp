@@ -15,12 +15,7 @@
 </head>
 <body>
 
-
-
-
-
-
-
+<%@include file="component/navBar.jsp"%>
 
 
 <!-- login Page -->

@@ -7,10 +7,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Admin_login.jsp">HOME</a>
+          <a class="nav-link active" aria-current="page" href="#">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="Doctor_login.jsp">DOCTOR</a>
+          <a class="nav-link active" aria-current="page" href="#">DOCTOR</a>
         </li> 
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">PATEINT</a>
@@ -22,7 +22,7 @@
            Admin
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Log Out</a></li>
+            <li><a class="dropdown-item" href="../AdminLogout">Log Out</a></li>
 
           </ul>
         </li> 
