@@ -23,7 +23,7 @@
 <div class="card point-card">
 <div class="card-body">
 <p class="fs-4 text-center">User Login</p>
-<form action="#" method="post">
+<form action="UserLogin" method="post">
 <div class="mb-4">
 <label class="form-lable">Email Address</label><input required  name="email" type="email" class="form-control">
 </div>

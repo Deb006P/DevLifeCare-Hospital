@@ -1,6 +1,7 @@
 package com.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 import com.entity.User;
 import com.mysql.cj.xdevapi.PreparableStatement;
@@ -28,9 +29,37 @@ public class Userdao {
 			
 		}catch (Exception e) {
 			// TODO: handle exception
+			e.printStackTrace();
 		}
 
 			return value;
 		}
-
+	
+	public User login(String em, String pas) {
+		User u = null;
+		try {
+			String sql= "select * from new_table where email =? and password=?";
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setString(1, em);
+			ps.setString(2, pas);
+			
+			ResultSet rs =ps.executeQuery();
+			
+			while (rs.next()) {
+				u = new User();
+				u.setId(rs.getInt(1));
+				u.setName(rs.getString(2));
+				u.setEmail(rs.getString(3));
+				u.setPassword(rs.getString(4));			}
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return u;
+	}
+	
+	
 }
+
+
+

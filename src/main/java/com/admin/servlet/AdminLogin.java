@@ -2,6 +2,8 @@ package com.admin.servlet;
 
 import java.io.IOException;
 
+import com.Db.DBconnector;
+import com.dao.Userdao;
 import com.entity.User;
 
 import jakarta.servlet.ServletException;
@@ -18,9 +20,12 @@ public class AdminLogin extends HttpServlet {
 			
 			// TODO Auto-generated method stub
 			try {
-				String email=req.getParameter("email");
+				String email=req.getParameter("email");//collect from user through  website. 
 				String password =req.getParameter("password");
 				HttpSession session = req.getSession();
+				
+				
+				
 				if(email.equals("admin@gmail.com") && password.equals("admin1234")) {
 					session.setAttribute("adminObj",new User());
 					resp.sendRedirect("Admin/index.jsp");

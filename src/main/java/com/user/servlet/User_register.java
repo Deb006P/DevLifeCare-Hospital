@@ -27,7 +27,7 @@ public class User_register  extends HttpServlet{
 			String password = req.getParameter( "password");
 			User u = new User(name,email,password);//create object of user class from entity
 			
-			Userdao d = new Userdao(DBconnector.getcon());//pass the connetion status from dbconnector file to dao file 
+			Userdao d = new Userdao(DBconnector.getcon());//pass the connetion status from dbconnector file to dao file using paramiterized constractor.
 			HttpSession session = req.getSession();
 			boolean n = d.UserRegister(u);{//pass data using u variable to UserRegister method to Userdao.java file.
 				if(n) {
