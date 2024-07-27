@@ -22,11 +22,12 @@ public class AdminLogin extends HttpServlet {
 				String password =req.getParameter("password");
 				HttpSession session = req.getSession();
 				if(email.equals("admin@gmail.com") && password.equals("admin1234")) {
+					session.setAttribute("adminObj",new User());
 					resp.sendRedirect("Admin/index.jsp");
 				}
 				else {
 					resp.sendRedirect("effects page/Admin_faild.jsp");
-					session.setAttribute("adminObj",new User());
+					
 				}
 			} catch (Exception e) {
 				// TODO: handle exception
